@@ -127,3 +127,12 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Large files
+.mp4
+.h264
+.jpg
+.bmp
+.gif
+.mp3
+.png
