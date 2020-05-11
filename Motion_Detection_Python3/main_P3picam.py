@@ -10,7 +10,7 @@ file_path = "./CAPTURED/"
 
 def Capture_Image(current_time, picture_path):
     # generate picture's name
-    picture_name = current_time.strftime("%Y.%m.%d-%H%M%S" + '.jpg')
+    picture_name = current_time.strftime("%Y.%m.%d-%H:%M:%S" + '.jpg')
     with picamera.PiCamera() as camera:
         camera.resolution = (1280,720)
         camera.capture(picture_path + picture_name)
