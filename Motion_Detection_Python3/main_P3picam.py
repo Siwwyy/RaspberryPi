@@ -35,15 +35,22 @@ def Time_Stamp(current_time, picture_path, picture_name):
     call([time_stamp_command],shell=True)
     print("We have timestamped our picture!")
     
+    
+    
+    
+
 
 while True:
     motion_state = P3picam_Python3.motion()
     #print(motion_state)
     if motion_state == True:
         print("Motion detected")
-        current_time = Get_Time()
+        #current_time = Get_Time()
         picture_name = Capture_Image(current_time, file_path)
-        Time_Stamp(current_time,file_path,picture_name)
+        
+        #PASTE NEURAL NETWORK HERE
+        
+        #Time_Stamp(current_time,file_path,picture_name)
 #        with picamera.PiCamera() as camera:
 ##            motion_file_path = "./CAPTURED/motion"+str(motion_counter)+".jpg"
 #            camera.resolution = (1280,720)
